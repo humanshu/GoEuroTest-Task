@@ -47,7 +47,7 @@ public class Controller  implements CommandLineRunner {
 	                 .append(retrievedData.get(i).getGeo_position().getLatitude().toString()).append( ", ")
 	                 .append(retrievedData.get(i).getGeo_position().getLongitude().toString()).append("\n");
 	             }
-	                writer.write(outputRow.toString());
+	            writer.write(outputRow.toString());
 	            			
 	        } catch (IOException e) {
 	            e.printStackTrace();
@@ -66,7 +66,7 @@ public class Controller  implements CommandLineRunner {
 	    	//http request handler
             RestTemplate restTemplate = new RestTemplate();            
             List<City> retreivedData = Arrays.asList(restTemplate.getForObject(endpointLink.concat(args[0]), City[].class));	               
-          	this.csvFileWriter(retreivedData);
+            this.csvFileWriter(retreivedData);
 	    }
 	    
 	    /**
@@ -78,7 +78,7 @@ public class Controller  implements CommandLineRunner {
 	    public static void main(String args[]) throws Exception {
 	    	// check input arguments	    	 
 	        if (args != null && args.length != 0 && args[0] != null && !args[0].isEmpty()) {  				       	        
-	        	String input = args[0].trim();	   
+	            String input = args[0].trim();	   
 	            SpringApplication.run(Controller.class, input); 
 	        }
 	        else {
