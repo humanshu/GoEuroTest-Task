@@ -8,8 +8,8 @@ import com.bhatia.goeurotask.GeoPosition;
  */
 public class City {
 
-	private Long _id;
-	private String key;
+    private Long _id;
+    private String key;
     private String name;
     private String fullName;
     private String iata_airport_code;
@@ -24,8 +24,7 @@ public class City {
 	
     public City() {}
 	
-		
-    /**
+         /**
 	 * @return the _id
 	 */
 	public Long get_id() {
@@ -206,9 +205,4 @@ public class City {
 	public void setDistance(String distance) {
 		this.distance = distance;
 	}
-
-
-    
-  
-    
 }
