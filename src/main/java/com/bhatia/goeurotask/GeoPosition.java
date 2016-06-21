@@ -5,8 +5,9 @@ package com.bhatia.goeurotask;
  *
  */
 public class GeoPosition {
-
+	
 	private Double latitude;
+	private Double longitude;  
 	/**
 	 * @return the latitude
 	 */
@@ -31,6 +32,4 @@ public class GeoPosition {
 	public void setLongitude(Double longitude) {
 		this.longitude = longitude;
 	}
-	private Double longitude;  
-	 
 }
